@@ -6,8 +6,7 @@
     "test": "mocha",
     "dev": "node server.js",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "start": "NODE_ENV=production node server.js"
   },
   "license": "MIT",
   "dependencies": {
